@@ -9,7 +9,8 @@
     "dev": "tsx watch orchestrator/cli.ts",
     "start": "node dist/orchestrator/cli.js",
     "analyze": "tsx orchestrator/cli.ts analyze",
-    "create-project": "tsx orchestrator/cli.ts create-project"
+    "create-project": "tsx orchestrator/cli.ts create-project",
+    "execute-agents": "tsx examples/run-agent-executor.ts"
   },
   "keywords": ["multi-agent", "orchestration", "adaptive", "project-management"],
   "author": "",
@@ -20,6 +21,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
     "zod": "^3.22.4"
   }
 }
