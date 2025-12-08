@@ -1,0 +1,25 @@
+{
+  "name": "adaptive-agent-system",
+  "version": "1.0.0",
+  "description": "Adaptive multi-agent system for diverse project types",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch orchestrator/index.ts",
+    "start": "node dist/index.js",
+    "analyze": "tsx orchestrator/cli.ts analyze",
+    "create-project": "tsx orchestrator/cli.ts create-project"
+  },
+  "keywords": ["multi-agent", "orchestration", "adaptive", "project-management"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
+  }
+}

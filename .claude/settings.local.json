@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude auth login:*)",
+      "Bash(npm install)",
+      "Bash(npm run create-project:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
