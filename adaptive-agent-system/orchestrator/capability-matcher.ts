@@ -108,7 +108,7 @@ export class CapabilityMatcher {
    * Extract collaboration information
    */
   private extractCollaboration(content: string): { providesTo: string[]; receivesFrom: string[] } {
-    const collaboration = { providesTo: [], receivesFrom: [] };
+    const collaboration: { providesTo: string[]; receivesFrom: string[] } = { providesTo: [], receivesFrom: [] };
 
     const providesToMatch = content.match(/\*\*Provides to\*\*:?\s*\n([\s\S]*?)(?=\*\*Receives from\*\*|\n## |$)/i);
     const receivesFromMatch = content.match(/\*\*Receives from\*\*:?\s*\n([\s\S]*?)(?=\n## |$)/i);
