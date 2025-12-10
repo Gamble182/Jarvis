@@ -3,7 +3,19 @@
     "allow": [
       "Bash(claude auth login:*)",
       "Bash(npm install)",
-      "Bash(npm run create-project:*)"
+      "Bash(npm run create-project:*)",
+      "Bash(test -f:*)",
+      "Bash(cat:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tsx:*)",
+      "Bash(head:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run test-execution:*)",
+      "Bash(npm run workflow:*)",
+      "Bash(ls:*)",
+      "Bash(wc:*)",
+      "Bash(du:*)",
+      "Bash(tree:*)"
     ],
     "deny": [],
     "ask": []
