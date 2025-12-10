@@ -10,9 +10,12 @@
     "start": "node dist/orchestrator/cli.js",
     "analyze": "tsx orchestrator/cli.ts analyze",
     "create-project": "tsx orchestrator/cli.ts create-project",
+    "workflow": "tsx orchestrator/run-workflow.ts",
+    "workflow:auto": "tsx orchestrator/run-workflow.ts --auto",
     "execute": "tsx orchestrator/agent-executor.ts",
     "execute-agents": "tsx examples/run-agent-executor.ts",
-    "execute-claude-code": "tsx examples/run-claude-code-executor.ts"
+    "execute-claude-code": "tsx examples/run-claude-code-executor.ts",
+    "test-execution": "tsx orchestrator/test-execution.ts"
   },
   "keywords": [
     "multi-agent",
