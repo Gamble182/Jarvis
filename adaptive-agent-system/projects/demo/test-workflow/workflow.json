@@ -1,0 +1,48 @@
+{
+  "type": "sequential",
+  "steps": [
+    {
+      "id": "step-1",
+      "action": "Analyze project requirements",
+      "agentId": "analyzer",
+      "inputs": [],
+      "outputs": [
+        "step-1-output"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "step-2",
+      "action": "Create project structure",
+      "agentId": "architect",
+      "inputs": [
+        "step-1-output"
+      ],
+      "outputs": [
+        "step-2-output"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "step-3",
+      "action": "Implement core functionality",
+      "agentId": "developer",
+      "inputs": [
+        "step-2-output"
+      ],
+      "outputs": [
+        "step-3-output"
+      ],
+      "status": "pending"
+    }
+  ],
+  "dependencies": {
+    "step-1": [],
+    "step-2": [
+      "step-1"
+    ],
+    "step-3": [
+      "step-2"
+    ]
+  }
+}
