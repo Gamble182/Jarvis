@@ -1,0 +1,50 @@
+{
+  "projectName": "Drehmoment",
+  "projectType": "saas-application",
+  "domains": [
+    "software-development",
+    "business-conception",
+    "legal-compliance",
+    "marketing",
+    "financial-planning"
+  ],
+  "requiredCapabilities": [
+    "email-automation",
+    "notification-systems",
+    "calendar-integration",
+    "business-logic-design",
+    "database-design",
+    "responsive-design",
+    "mobile-optimization",
+    "ux-design",
+    "frontend-development",
+    "workflow-automation",
+    "backend-development",
+    "gdpr-compliance",
+    "legal-review",
+    "data-modeling",
+    "api-design",
+    "system-integration",
+    "security-architecture",
+    "system-architecture",
+    "technical-design",
+    "business-modeling",
+    "mvp-planning",
+    "market-analysis",
+    "go-to-market-strategy",
+    "pricing-strategy",
+    "cost-estimation"
+  ],
+  "phases": [
+    "conception",
+    "mvp-planning",
+    "technical-design",
+    "development",
+    "market-validation",
+    "launch-preparation"
+  ],
+  "constraints": {
+    "technicalComplexity": "high",
+    "budget": "bootstrap"
+  }
+}

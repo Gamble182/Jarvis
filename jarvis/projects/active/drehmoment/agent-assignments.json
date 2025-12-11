@@ -1,0 +1,56 @@
+[
+  {
+    "id": "agent-01",
+    "name": "Business Strategy Agent",
+    "role": "Business Modeling, Mvp Planning, Pricing Strategy",
+    "capabilities": [
+      "business-modeling",
+      "mvp-planning",
+      "pricing-strategy"
+    ],
+    "phase": "conception",
+    "status": "pending"
+  },
+  {
+    "id": "agent-02",
+    "name": "Technical Architecture Agent",
+    "role": "Database Design, System Architecture",
+    "capabilities": [
+      "database-design",
+      "system-architecture"
+    ],
+    "phase": "technical-design",
+    "status": "pending"
+  },
+  {
+    "id": "agent-03",
+    "name": "UX Design Agent",
+    "role": "Ux Design",
+    "capabilities": [
+      "ux-design"
+    ],
+    "phase": "technical-design",
+    "status": "pending"
+  },
+  {
+    "id": "agent-04",
+    "name": "Development Agent",
+    "role": "Frontend Development, Backend Development",
+    "capabilities": [
+      "frontend-development",
+      "backend-development"
+    ],
+    "phase": "development",
+    "status": "pending"
+  },
+  {
+    "id": "agent-05",
+    "name": "Compliance & Legal Agent",
+    "role": "Gdpr Compliance",
+    "capabilities": [
+      "gdpr-compliance"
+    ],
+    "phase": "all",
+    "status": "pending"
+  }
+]

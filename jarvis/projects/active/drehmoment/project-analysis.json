@@ -1,0 +1,2162 @@
+{
+  "projectType": "saas-application",
+  "domains": [
+    "software-development",
+    "business-conception",
+    "legal-compliance",
+    "marketing",
+    "financial-planning"
+  ],
+  "complexity": "high",
+  "requiredCapabilities": [
+    "email-automation",
+    "notification-systems",
+    "calendar-integration",
+    "business-logic-design",
+    "database-design",
+    "responsive-design",
+    "mobile-optimization",
+    "ux-design",
+    "frontend-development",
+    "workflow-automation",
+    "backend-development",
+    "gdpr-compliance",
+    "legal-review",
+    "data-modeling",
+    "api-design",
+    "system-integration",
+    "security-architecture",
+    "system-architecture",
+    "technical-design",
+    "business-modeling",
+    "mvp-planning",
+    "market-analysis",
+    "go-to-market-strategy",
+    "pricing-strategy",
+    "cost-estimation"
+  ],
+  "suggestedPhases": [
+    "conception",
+    "mvp-planning",
+    "technical-design",
+    "development",
+    "market-validation",
+    "launch-preparation"
+  ],
+  "extractedRequirements": [
+    {
+      "id": "REQ-001",
+      "category": "general",
+      "description": "**Produktname:** Drehmoment",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-002",
+      "category": "general",
+      "description": "**Tagline:** \"Der Hebel für dein Handwerk\"",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-003",
+      "category": "general",
+      "description": "**Domain:** drehmoment.de (primär) oder drehmoment.app (alternativ)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-004",
+      "category": "general",
+      "description": "**GmbH:** Drehmoment GmbH (bei Firmierung)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-005",
+      "category": "general",
+      "description": "**Positionierung:** Professionelle, moderne Wartungsplattform spezialisiert auf Handwerksbetriebe",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-006",
+      "category": "general",
+      "description": "Selbstständiger Heizungsbauer, Ein-Mann-Betrieb",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-007",
+      "category": "general",
+      "description": "~80 Wartungskunden + Ad-hoc-Reparaturen",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-008",
+      "category": "communication",
+      "description": "Technische Affinität: Mittel (nutzt Smartphone, Excel, Email)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "email-automation",
+        "notification-systems"
+      ]
+    },
+    {
+      "id": "REQ-009",
+      "category": "scheduling",
+      "description": "Aktuell: 8h/Woche für Administration (Excel, Telefonate, Terminplanung)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "calendar-integration",
+        "business-logic-design"
+      ]
+    },
+    {
+      "id": "REQ-010",
+      "category": "scheduling",
+      "description": "Manuelle Prüfung von Wartungsterminen in Excel",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "calendar-integration",
+        "business-logic-design"
+      ]
+    },
+    {
+      "id": "REQ-011",
+      "category": "general",
+      "description": "Telefonische Kundenkontaktierung (15-20 Min pro Kunde)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-012",
+      "category": "general",
+      "description": "Vergessene Wartungen → Kundenunzufriedenheit",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-013",
+      "category": "scheduling",
+      "description": "Keine systematische Materialplanung vor Terminen",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "calendar-integration",
+        "business-logic-design"
+      ]
+    },
+    {
+      "id": "REQ-014",
+      "category": "data-management",
+      "description": "Kundendaten verstreut (Excel, Handy-Kontakte, Notizen)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "database-design"
+      ]
+    },
+    {
+      "id": "REQ-015",
+      "category": "general",
+      "description": "Organisationsaufwand: €16.640/Jahr (8h/Woche × €40/h)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-016",
+      "category": "general",
+      "description": "Verpasste Wartungen: €3.000-5.000/Jahr Kundenverlust",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-017",
+      "category": "general",
+      "description": "**Gesamt: ~€20.000/Jahr Opportunitätskosten**",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-018",
+      "category": "general",
+      "description": "~15.000 Ein-Mann-Heizungsbaubetriebe in Deutschland",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-019",
+      "category": "general",
+      "description": "Konservativ: 50 Kunden × €29/Monat = €17.400/Jahr",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-020",
+      "category": "general",
+      "description": "Realistisch: 100 Kunden × €39/Monat = €46.800/Jahr",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-021",
+      "category": "communication",
+      "description": "Kunde anlegen mit: Name, Adresse, Telefon, Email (optional), Notizen",
+      "priority": "nice-to-have",
+      "relatedCapabilities": [
+        "email-automation",
+        "notification-systems"
+      ]
+    },
+    {
+      "id": "REQ-022",
+      "category": "general",
+      "description": "Einem Kunden N Heizungen zuordnen (1:n Beziehung)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-023",
+      "category": "general",
+      "description": "Pro Heizung: Modell, Installationsdatum, Seriennummer, Wartungsintervall",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-024",
+      "category": "general",
+      "description": "Intervalle: 1/3/6/12/24 Monate wählbar",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-025",
+      "category": "general",
+      "description": "Kundenliste: Sortierbar, durchsuchbar, filterbar nach \"Wartung fällig\"",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-026",
+      "category": "mobile",
+      "description": "Mobile-optimierte Eingabeformulare (große Touch-Targets)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "responsive-design",
+        "mobile-optimization"
+      ]
+    },
+    {
+      "id": "REQ-027",
+      "category": "general",
+      "description": "Kunde anlegen in <60 Sekunden möglich",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-028",
+      "category": "general",
+      "description": "Kundenliste lädt in <2 Sekunden",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-029",
+      "category": "general",
+      "description": "Suche funktioniert in Echtzeit",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-030",
+      "category": "user-interface",
+      "description": "Mobile UI auf iPhone/Android optimiert",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "ux-design",
+        "frontend-development"
+      ]
+    },
+    {
+      "id": "REQ-031",
+      "category": "automation",
+      "description": "Berechnung erfolgt automatisch beim Anlegen",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "workflow-automation",
+        "backend-development"
+      ]
+    },
+    {
+      "id": "REQ-032",
+      "category": "general",
+      "description": "Neuberechnung nach jeder erledigten Wartung",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-033",
+      "category": "general",
+      "description": "Anzeige: \"in X Tagen\" + konkretes Datum",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-034",
+      "category": "general",
+      "description": "Chronologische Auflistung aller Wartungen",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-035",
+      "category": "general",
+      "description": "Pro Eintrag: Datum, Notizen, Fotos",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-036",
+      "category": "general",
+      "description": "Fotos als Thumbnails, klickbar für Vollbild",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-037",
+      "category": "general",
+      "description": "Filterbar (letztes Jahr, letzte 5 Wartungen)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-038",
+      "category": "general",
+      "description": "Offline-Fähigkeit: Wartungen können offline abgehakt werden",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-039",
+      "category": "automation",
+      "description": "Automatische Synchronisation bei Verbindung",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "workflow-automation",
+        "backend-development"
+      ]
+    },
+    {
+      "id": "REQ-040",
+      "category": "general",
+      "description": "Service Worker für PWA-Funktionalität",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-041",
+      "category": "general",
+      "description": "Cronjob läuft täglich 6:00 Uhr",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-042",
+      "category": "general",
+      "description": "Prüft: Wartung in exakt 28 Tagen fällig?",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-043",
+      "category": "communication",
+      "description": "Sendet personalisierte Email mit:",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "email-automation",
+        "notification-systems"
+      ]
+    },
+    {
+      "id": "REQ-044",
+      "category": "general",
+      "description": "Kundenname, Heizungsmodell",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-045",
+      "category": "general",
+      "description": "Voraussichtliches Datum",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-046",
+      "category": "data-management",
+      "description": "Max' Kontaktdaten",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "database-design"
+      ]
+    },
+    {
+      "id": "REQ-047",
+      "category": "compliance",
+      "description": "Abmelde-Link (DSGVO!)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "gdpr-compliance",
+        "legal-review"
+      ]
+    },
+    {
+      "id": "REQ-048",
+      "category": "communication",
+      "description": "Nur wenn: Email-Adresse hinterlegt + Opt-In + noch nicht gesendet",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "email-automation",
+        "notification-systems"
+      ]
+    },
+    {
+      "id": "REQ-049",
+      "category": "communication",
+      "description": "Erinnerungs-Email 7 Tage vor Wartung",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "email-automation",
+        "notification-systems"
+      ]
+    },
+    {
+      "id": "REQ-050",
+      "category": "scheduling",
+      "description": "Nur wenn noch kein Termin im System",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "calendar-integration",
+        "business-logic-design"
+      ]
+    },
+    {
+      "id": "REQ-051",
+      "category": "communication",
+      "description": "Jeden Montag 7:00 Uhr Email an Max",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "email-automation",
+        "notification-systems"
+      ]
+    },
+    {
+      "id": "REQ-052",
+      "category": "general",
+      "description": "Gruppiert:",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-053",
+      "category": "general",
+      "description": "Überfällige Wartungen",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-054",
+      "category": "general",
+      "description": "Diese Woche fällig",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-055",
+      "category": "general",
+      "description": "Nächste Woche fällig",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-056",
+      "category": "general",
+      "description": "Pro Kunde: Name, Adresse, Telefon, Datum",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-057",
+      "category": "general",
+      "description": "Benötigte Teile (basierend auf Heizungsmodellen)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-058",
+      "category": "general",
+      "description": "Direktlinks zu Kundenprofilen",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-059",
+      "category": "general",
+      "description": "Separater Bereich in Max' Dashboard",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-060",
+      "category": "general",
+      "description": "Liste: \"Telefonisch zu kontaktieren\"",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-061",
+      "category": "general",
+      "description": "Click-to-Call Links",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-062",
+      "category": "general",
+      "description": "\"Kontaktiert\" Button (entfernt aus Liste)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-063",
+      "category": "general",
+      "description": "In Heizungskonfiguration hinterlegbar",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-064",
+      "category": "general",
+      "description": "Freitextfeld pro Teil (z.B. \"Brennerplatte\", \"Luftfilter\")",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-065",
+      "category": "scheduling",
+      "description": "Anzeige bei Wartung: \"Benötigte Teile für diesen Termin\"",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "calendar-integration",
+        "business-logic-design"
+      ]
+    },
+    {
+      "id": "REQ-066",
+      "category": "communication",
+      "description": "Auflistung in wöchentlicher Email: \"Diese Woche brauchst du: ...\"",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "email-automation",
+        "notification-systems"
+      ]
+    },
+    {
+      "id": "REQ-067",
+      "category": "inventory",
+      "description": "Lagerbestand tracken",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "data-modeling",
+        "business-logic-design"
+      ]
+    },
+    {
+      "id": "REQ-068",
+      "category": "automation",
+      "description": "Automatische Bestellvorschläge",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "workflow-automation",
+        "backend-development"
+      ]
+    },
+    {
+      "id": "REQ-069",
+      "category": "integration",
+      "description": "Integration mit Lieferanten",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "api-design",
+        "system-integration"
+      ]
+    },
+    {
+      "id": "REQ-070",
+      "category": "general",
+      "description": "Installierbar auf Android/iOS Homescreen",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-071",
+      "category": "general",
+      "description": "Funktioniert wie native App",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-072",
+      "category": "general",
+      "description": "Offline-Fähigkeit durch Service Worker",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-073",
+      "category": "general",
+      "description": "Kundenliste wird gecached",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-074",
+      "category": "communication",
+      "description": "Push-Benachrichtigungen (später)",
+      "priority": "nice-to-have",
+      "relatedCapabilities": [
+        "email-automation",
+        "notification-systems"
+      ]
+    },
+    {
+      "id": "REQ-075",
+      "category": "general",
+      "description": "Touch-Targets: Mindestens 44×44px",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-076",
+      "category": "general",
+      "description": "Wichtigste Aktionen prominent platziert",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-077",
+      "category": "general",
+      "description": "Minimales Scrolling erforderlich",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-078",
+      "category": "general",
+      "description": "Keine Pinch-to-Zoom nötig",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-079",
+      "category": "general",
+      "description": "Große, gut lesbare Schrift (16px+)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-080",
+      "category": "general",
+      "description": "Hochformat-optimiert",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-081",
+      "category": "general",
+      "description": "**Ladezeiten:**",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-082",
+      "category": "mobile",
+      "description": "Initial Page Load: <3 Sekunden (3G Mobile)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "responsive-design",
+        "mobile-optimization"
+      ]
+    },
+    {
+      "id": "REQ-083",
+      "category": "general",
+      "description": "Kundenliste: <2 Sekunden",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-084",
+      "category": "general",
+      "description": "Wartung abhaken: <1 Sekunde",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-085",
+      "category": "integration",
+      "description": "API Response: <500ms (p95)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "api-design",
+        "system-integration"
+      ]
+    },
+    {
+      "id": "REQ-086",
+      "category": "general",
+      "description": "**Offline-Fähigkeit:**",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-087",
+      "category": "general",
+      "description": "Kundenliste offline verfügbar (gecached)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-088",
+      "category": "general",
+      "description": "Wartungen können offline abgehakt werden",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-089",
+      "category": "automation",
+      "description": "Automatischer Sync bei Verbindung",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "workflow-automation",
+        "backend-development"
+      ]
+    },
+    {
+      "id": "REQ-090",
+      "category": "communication",
+      "description": "**Authentifizierung:** Email + Passwort, Session-basiert (JWT)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "email-automation",
+        "notification-systems"
+      ]
+    },
+    {
+      "id": "REQ-091",
+      "category": "general",
+      "description": "**Verschlüsselung:** HTTPS obligatorisch, Passwörter gehasht (bcrypt)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-092",
+      "category": "automation",
+      "description": "**Backups:** Tägliche automatische Backups, 30 Tage Retention",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "workflow-automation",
+        "backend-development"
+      ]
+    },
+    {
+      "id": "REQ-093",
+      "category": "communication",
+      "description": "Email-Opt-In erforderlich (Double-Opt-In Mechanismus)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "email-automation",
+        "notification-systems"
+      ]
+    },
+    {
+      "id": "REQ-094",
+      "category": "communication",
+      "description": "Abmelde-Link in jeder automatisierten Email",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "email-automation",
+        "notification-systems"
+      ]
+    },
+    {
+      "id": "REQ-095",
+      "category": "data-management",
+      "description": "Datenschutzerklärung",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "database-design"
+      ]
+    },
+    {
+      "id": "REQ-096",
+      "category": "data-management",
+      "description": "Betroffenenrechte: Auskunft (CSV-Export), Löschung, Datenportabilität",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "database-design"
+      ]
+    },
+    {
+      "id": "REQ-097",
+      "category": "general",
+      "description": "Dokumentation der Rechtsgrundlagen",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-098",
+      "category": "general",
+      "description": "**Lernkurve:** Max sollte System in <30 Minuten verstehen",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-099",
+      "category": "user-interface",
+      "description": "**Keine Dokumentation nötig:** Intuitive UI, Tooltips für wichtige Funktionen",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "ux-design",
+        "frontend-development"
+      ]
+    },
+    {
+      "id": "REQ-100",
+      "category": "general",
+      "description": "**Accessibility:** WCAG 2.1 Level AA anstreben",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-101",
+      "category": "general",
+      "description": "**Kontrast:** Mindestens 4.5:1 für Text",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-102",
+      "category": "general",
+      "description": "**Fehlerbehandlung:** Klare, hilfreiche Fehlermeldungen",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-103",
+      "category": "general",
+      "description": "**MVP:** Bis 100 Kunden pro Nutzer",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-104",
+      "category": "general",
+      "description": "**SaaS:** Bis 10.000 Kunden pro Mandant",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-105",
+      "category": "general",
+      "description": "**Multi-Tenancy:** Bis 1.000 Mandanten",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-106",
+      "category": "integration",
+      "description": "✅ Next.js: SSR, API Routes, File-based Routing in einem",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "api-design",
+        "system-integration"
+      ]
+    },
+    {
+      "id": "REQ-107",
+      "category": "general",
+      "description": "✅ TypeScript: Type Safety, weniger Bugs",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-108",
+      "category": "automation",
+      "description": "✅ Prisma: Type-safe DB, automatische Migrations",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "workflow-automation",
+        "backend-development"
+      ]
+    },
+    {
+      "id": "REQ-109",
+      "category": "authentication",
+      "description": "✅ Supabase: Kostenlose PostgreSQL, Auth, Storage",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "security-architecture",
+        "backend-development"
+      ]
+    },
+    {
+      "id": "REQ-110",
+      "category": "general",
+      "description": "✅ Resend: Entwickler-freundlich, gute Deliverability",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-111",
+      "category": "automation",
+      "description": "✅ Vercel: Zero-Config Deployment, automatische CI/CD",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "workflow-automation",
+        "backend-development"
+      ]
+    },
+    {
+      "id": "REQ-112",
+      "category": "general",
+      "description": "User 1:N Customer",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-113",
+      "category": "general",
+      "description": "Customer 1:N Heater",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-114",
+      "category": "general",
+      "description": "Heater 1:N Maintenance",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-115",
+      "category": "general",
+      "description": "User 1:N Maintenance",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-116",
+      "category": "general",
+      "description": "Täglich 6:00 Uhr: Wartungserinnerungen prüfen",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-117",
+      "category": "general",
+      "description": "Montags 7:00 Uhr: Wöchentliche Übersicht",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-118",
+      "category": "general",
+      "description": "Vereinbarung: Hybridmodell",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-119",
+      "category": "general",
+      "description": "Einmalig von Max: €3.000 (für MVP-Entwicklung)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-120",
+      "category": "user-interface",
+      "description": "Equity Split: 70% Developer / 30% Max (bei SaaS-Skalierung)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "ux-design",
+        "frontend-development"
+      ]
+    },
+    {
+      "id": "REQ-121",
+      "category": "general",
+      "description": "MVP (Max alleine): €0/Monat (Free Tiers)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-122",
+      "category": "general",
+      "description": "SaaS (bis 100 Nutzer): €45/Monat (Vercel Pro + Supabase Pro)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-123",
+      "category": "general",
+      "description": "Skalierung: Pay-as-you-grow",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-124",
+      "category": "general",
+      "description": "**Impact:** Hoch (Kern-Feature)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-125",
+      "category": "general",
+      "description": "**Mitigation:**",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-126",
+      "category": "general",
+      "description": "Resend nutzen (etablierte Reputation)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-127",
+      "category": "general",
+      "description": "SPF/DKIM/DMARC korrekt konfigurieren",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-128",
+      "category": "general",
+      "description": "Warmer Absender (max@drehmoment.de, nicht noreply@)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-129",
+      "category": "general",
+      "description": "Opt-In dokumentieren",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-130",
+      "category": "communication",
+      "description": "Email-Öffnungsraten monitoren",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "email-automation",
+        "notification-systems"
+      ]
+    },
+    {
+      "id": "REQ-131",
+      "category": "general",
+      "description": "**Impact:** Mittel",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-132",
+      "category": "general",
+      "description": "**Mitigation:**",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-133",
+      "category": "general",
+      "description": "Last-Write-Wins Strategie",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-134",
+      "category": "general",
+      "description": "Konflikt-Flag bei Sync",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-135",
+      "category": "general",
+      "description": "Max erhält Warnung bei erkanntem Konflikt",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-136",
+      "category": "data-management",
+      "description": "**Impact:** Hoch (Datenverlust)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "database-design"
+      ]
+    },
+    {
+      "id": "REQ-137",
+      "category": "general",
+      "description": "**Mitigation:**",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-138",
+      "category": "general",
+      "description": "CSV-Import-Tool mit Vorschau",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-139",
+      "category": "general",
+      "description": "Testlauf vor finalem Import",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-140",
+      "category": "general",
+      "description": "Excel-Backup vor Migration",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-141",
+      "category": "general",
+      "description": "**Impact:** Sehr hoch (Projekt-Scheitern)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-142",
+      "category": "general",
+      "description": "**Mitigation:**",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-143",
+      "category": "general",
+      "description": "Intensive 2h Schulung zu Projektstart",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-144",
+      "category": "general",
+      "description": "Wöchentliche Check-Ins ersten Monat",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-145",
+      "category": "user-interface",
+      "description": "Kontinuierlicher Feedback-Loop",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "ux-design",
+        "frontend-development"
+      ]
+    },
+    {
+      "id": "REQ-146",
+      "category": "general",
+      "description": "Einfachheit absolut priorisieren",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-147",
+      "category": "user-interface",
+      "description": "Quick-Wins aufzeigen (Zeitersparnis messbar machen)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "ux-design",
+        "frontend-development"
+      ]
+    },
+    {
+      "id": "REQ-148",
+      "category": "general",
+      "description": "**Impact:** Hoch (keine Skalierung)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-149",
+      "category": "general",
+      "description": "**Mitigation:**",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-150",
+      "category": "general",
+      "description": "MVP mit Max validiert Product-Market-Fit",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-151",
+      "category": "general",
+      "description": "Beta-Gruppe (5-10 Nutzer aus Max' Netzwerk)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-152",
+      "category": "general",
+      "description": "Feedback einholen vor großem Launch",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-153",
+      "category": "general",
+      "description": "Iteratives Vorgehen",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-154",
+      "category": "general",
+      "description": "**Impact:** Mittel",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-155",
+      "category": "general",
+      "description": "**Mitigation:**",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-156",
+      "category": "general",
+      "description": "Fokus auf Nische (Ein-Mann-Betriebe)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-157",
+      "category": "general",
+      "description": "Schnelle Iteration, Features basierend auf Feedback",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-158",
+      "category": "general",
+      "description": "Customer Success (persönlicher Support als USP)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-159",
+      "category": "general",
+      "description": "**Impact:** Sehr hoch (Bußgeld bis €20 Mio oder 4% Jahresumsatz)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-160",
+      "category": "general",
+      "description": "**Mitigation:**",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-161",
+      "category": "general",
+      "description": "Rechtsanwalt konsultieren (Budget: €500-1.000)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-162",
+      "category": "general",
+      "description": "Double-Opt-In Mechanismus implementieren",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-163",
+      "category": "general",
+      "description": "AV-Vertrag mit Supabase (Auftragsverarbeiter)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-164",
+      "category": "data-management",
+      "description": "Datenschutzerklärung prominent platziert",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "database-design"
+      ]
+    },
+    {
+      "id": "REQ-165",
+      "category": "compliance",
+      "description": "Regelmäßige DSGVO-Audits",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "gdpr-compliance",
+        "legal-review"
+      ]
+    },
+    {
+      "id": "REQ-166",
+      "category": "general",
+      "description": "⏱️ Kundenanlage: <60 Sekunden (vs. Excel: ~3 Minuten)",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-167",
+      "category": "general",
+      "description": "⏱️ Wartung abhaken: <30 Sekunden (vs. Excel: ~2 Minuten + Telefonat)",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-168",
+      "category": "general",
+      "description": "⏱️ Wöchentlicher Admin-Aufwand: <2 Stunden (vorher: 8 Stunden)",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-169",
+      "category": "general",
+      "description": "💰 ROI: Einsparung €6.000+/Jahr (durch Zeitersparnis)",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-170",
+      "category": "communication",
+      "description": "📧 Email-Zustellrate: >95%",
+      "priority": "must-have",
+      "relatedCapabilities": [
+        "email-automation",
+        "notification-systems"
+      ]
+    },
+    {
+      "id": "REQ-171",
+      "category": "general",
+      "description": "🎯 Keine verpassten Wartungen (0% im ersten Jahr)",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-172",
+      "category": "general",
+      "description": "😊 Max-Zufriedenheit: 8/10+ (Umfrage nach 3 Monaten)",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-173",
+      "category": "general",
+      "description": "📱 Max nutzt App täglich",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-174",
+      "category": "general",
+      "description": "📊 80% der Kunden im System migriert (nach 4 Wochen)",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-175",
+      "category": "general",
+      "description": "🔄 Alle Wartungen über System abgewickelt (nach 2 Monaten)",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-176",
+      "category": "general",
+      "description": "👥 Neue Nutzer: 10/Monat (Jahr 1 nach SaaS-Launch)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-177",
+      "category": "general",
+      "description": "💰 MRR: €3.000+ nach 12 Monaten",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-178",
+      "category": "general",
+      "description": "📈 Churn: <5%/Monat",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-179",
+      "category": "user-interface",
+      "description": "🎯 Customer Acquisition Cost: <€100/Kunde",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "ux-design",
+        "frontend-development"
+      ]
+    },
+    {
+      "id": "REQ-180",
+      "category": "general",
+      "description": "🔁 Weekly Active Users: 60%+",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-181",
+      "category": "communication",
+      "description": "📧 Email Open Rate: 40%+ (Erinnerungen)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "email-automation",
+        "notification-systems"
+      ]
+    },
+    {
+      "id": "REQ-182",
+      "category": "general",
+      "description": "💬 NPS Score: 40+",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-183",
+      "category": "general",
+      "description": "⚖️ CAC:LTV Ratio: >3:1",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-184",
+      "category": "general",
+      "description": "📊 Gross Margin: >80% (typisch für SaaS)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-185",
+      "category": "general",
+      "description": "✅ Vollständige Kundenverwaltung (CRUD)",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-186",
+      "category": "general",
+      "description": "✅ Heizungskonfiguration mit Wartungsintervallen",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-187",
+      "category": "mobile",
+      "description": "✅ Wartung-Abhaken-Flow (Mobile-optimiert)",
+      "priority": "must-have",
+      "relatedCapabilities": [
+        "responsive-design",
+        "mobile-optimization"
+      ]
+    },
+    {
+      "id": "REQ-188",
+      "category": "general",
+      "description": "✅ Wartungshistorie mit Foto-Upload",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-189",
+      "category": "communication",
+      "description": "✅ Automatische Email-Erinnerungen (4 Wochen, 1 Woche)",
+      "priority": "must-have",
+      "relatedCapabilities": [
+        "email-automation",
+        "notification-systems"
+      ]
+    },
+    {
+      "id": "REQ-190",
+      "category": "general",
+      "description": "✅ Wöchentliche Übersicht für Max",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-191",
+      "category": "general",
+      "description": "✅ PWA-Installation möglich",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-192",
+      "category": "general",
+      "description": "✅ Offline-Fähigkeit (Kundenliste, Wartung abhaken)",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-193",
+      "category": "inventory",
+      "description": "✅ Basis-Materialverwaltung (Teileliste)",
+      "priority": "must-have",
+      "relatedCapabilities": [
+        "data-modeling",
+        "business-logic-design"
+      ]
+    },
+    {
+      "id": "REQ-194",
+      "category": "compliance",
+      "description": "✅ CSV-Export für DSGVO",
+      "priority": "must-have",
+      "relatedCapabilities": [
+        "gdpr-compliance",
+        "legal-review"
+      ]
+    },
+    {
+      "id": "REQ-195",
+      "category": "data-management",
+      "description": "✅ Datenschutzerklärung & Opt-In Flow",
+      "priority": "must-have",
+      "relatedCapabilities": [
+        "database-design"
+      ]
+    },
+    {
+      "id": "REQ-196",
+      "category": "integration",
+      "description": "Kalender-Integration",
+      "priority": "must-have",
+      "relatedCapabilities": [
+        "api-design",
+        "system-integration"
+      ]
+    },
+    {
+      "id": "REQ-197",
+      "category": "scheduling",
+      "description": "Automatische Terminvorschläge",
+      "priority": "must-have",
+      "relatedCapabilities": [
+        "calendar-integration",
+        "business-logic-design"
+      ]
+    },
+    {
+      "id": "REQ-198",
+      "category": "inventory",
+      "description": "Lagerbestandsverwaltung",
+      "priority": "must-have",
+      "relatedCapabilities": [
+        "data-modeling",
+        "business-logic-design"
+      ]
+    },
+    {
+      "id": "REQ-199",
+      "category": "general",
+      "description": "Bestellmanagement",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-200",
+      "category": "general",
+      "description": "Rechnungsstellung",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-201",
+      "category": "general",
+      "description": "Multi-User-Verwaltung",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-202",
+      "category": "general",
+      "description": "Max migriert alle Kunden",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-203",
+      "category": "general",
+      "description": "Wöchentliche Feedback-Sessions",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-204",
+      "category": "user-interface",
+      "description": "Bug-Fixes & UI-Tweaks",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "ux-design",
+        "frontend-development"
+      ]
+    },
+    {
+      "id": "REQ-205",
+      "category": "general",
+      "description": "Performance-Optimierung",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-206",
+      "category": "general",
+      "description": "Erste Feature-Erweiterungen basierend auf Max' Input",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-207",
+      "category": "general",
+      "description": "Multi-Tenancy Architektur",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-208",
+      "category": "integration",
+      "description": "Stripe/Paddle Integration (Billing)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "api-design",
+        "system-integration"
+      ]
+    },
+    {
+      "id": "REQ-209",
+      "category": "general",
+      "description": "Marketing-Website",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-210",
+      "category": "general",
+      "description": "Onboarding-Flow für neue Nutzer",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-211",
+      "category": "general",
+      "description": "Beta-Programm (5-10 Nutzer aus Max' Netzwerk)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-212",
+      "category": "general",
+      "description": "Öffentlicher Launch",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-213",
+      "category": "general",
+      "description": "Marketing-Kampagne",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-214",
+      "category": "general",
+      "description": "Customer Support System",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-215",
+      "category": "scheduling",
+      "description": "Erweiterte Features (Kalender, Rechnungen)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "calendar-integration",
+        "business-logic-design"
+      ]
+    },
+    {
+      "id": "REQ-216",
+      "category": "general",
+      "description": "Business Model Canvas erstellen (basierend auf Max' Use Case)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-217",
+      "category": "general",
+      "description": "MVP-Features priorisieren (MoSCoW-Methode)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-218",
+      "category": "general",
+      "description": "Pricing-Strategie entwickeln (Solo/Pro/Enterprise Tiers)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-219",
+      "category": "general",
+      "description": "Go-to-Market-Strategie (Beta → SaaS)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-220",
+      "category": "general",
+      "description": "Wettbewerbsanalyse (Handwerker-Office, meetergo, simpleSystem)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-221",
+      "category": "general",
+      "description": "Opportunitätskosten: €20.000/Jahr",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-222",
+      "category": "general",
+      "description": "Marktgröße: 15.000 Ein-Mann-Betriebe Deutschland",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-223",
+      "category": "general",
+      "description": "Budget: Bootstrap (€3.000 initial)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-224",
+      "category": "general",
+      "description": "Tech Stack Validierung/Optimierung",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-225",
+      "category": "general",
+      "description": "System-Architektur-Diagramm (C4 Model)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-226",
+      "category": "data-management",
+      "description": "Datenbank-Schema detaillieren (Prisma Schema)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "database-design"
+      ]
+    },
+    {
+      "id": "REQ-227",
+      "category": "integration",
+      "description": "API-Struktur definieren (REST Endpoints)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "api-design",
+        "system-integration"
+      ]
+    },
+    {
+      "id": "REQ-228",
+      "category": "general",
+      "description": "Deployment-Strategie (Vercel + Supabase)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-229",
+      "category": "general",
+      "description": "Performance-Strategie (Caching, CDN)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-230",
+      "category": "general",
+      "description": "Skalierungs-Plan (MVP → SaaS)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-231",
+      "category": "user-interface",
+      "description": "Offline-First Requirement",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "ux-design",
+        "frontend-development"
+      ]
+    },
+    {
+      "id": "REQ-232",
+      "category": "user-interface",
+      "description": "Mobile-First Requirement",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "ux-design",
+        "frontend-development"
+      ]
+    },
+    {
+      "id": "REQ-233",
+      "category": "general",
+      "description": "PWA erforderlich",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-234",
+      "category": "general",
+      "description": "Budget: €0/Monat für MVP",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-235",
+      "category": "compliance",
+      "description": "DSGVO-Checkliste erstellen",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "gdpr-compliance",
+        "legal-review"
+      ]
+    },
+    {
+      "id": "REQ-236",
+      "category": "data-management",
+      "description": "Datenschutzerklärung Template",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "database-design"
+      ]
+    },
+    {
+      "id": "REQ-237",
+      "category": "communication",
+      "description": "Email-Opt-In Flow spezifizieren",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "email-automation",
+        "notification-systems"
+      ]
+    },
+    {
+      "id": "REQ-238",
+      "category": "user-interface",
+      "description": "AV-Vertrag Requirements (Supabase)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "ux-design",
+        "frontend-development"
+      ]
+    },
+    {
+      "id": "REQ-239",
+      "category": "general",
+      "description": "Data Retention Policy",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-240",
+      "category": "general",
+      "description": "Betroffenenrechte implementieren (Export, Löschung)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-241",
+      "category": "general",
+      "description": "ROPA (Record of Processing Activities)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-242",
+      "category": "general",
+      "description": "Auftragsverarbeitung: Max = Verantwortlicher",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-243",
+      "category": "communication",
+      "description": "Email-Marketing: Opt-In erforderlich",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "email-automation",
+        "notification-systems"
+      ]
+    },
+    {
+      "id": "REQ-244",
+      "category": "data-management",
+      "description": "Kundendaten: Name, Adresse, Telefon, Email",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "database-design"
+      ]
+    },
+    {
+      "id": "REQ-245",
+      "category": "general",
+      "description": "Fotos von Heizungen (potenziell sensibler Kontext)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-246",
+      "category": "mobile",
+      "description": "Mobile-First Wireframes",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "responsive-design",
+        "mobile-optimization"
+      ]
+    },
+    {
+      "id": "REQ-247",
+      "category": "general",
+      "description": "User Journey Mapping (Max' typischer Tag)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-248",
+      "category": "general",
+      "description": "Accessibility Audit",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-249",
+      "category": "general",
+      "description": "Usability Testing Plan",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-250",
+      "category": "user-interface",
+      "description": "Design System (Farben, Typography, Components)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "ux-design",
+        "frontend-development"
+      ]
+    },
+    {
+      "id": "REQ-251",
+      "category": "general",
+      "description": "Zielgruppe: 35-50 Jahre, mittlere Tech-Affinität",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-252",
+      "category": "general",
+      "description": "Nutzungskontext: Beim Kunden, oft schlechtes Licht, dreckige Hände",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-253",
+      "category": "general",
+      "description": "Hauptaktion: Wartung abhaken (<30 Sekunden)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-254",
+      "category": "general",
+      "description": "Keine nativen iOS/Android Apps (nur PWA)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-255",
+      "category": "data-management",
+      "description": "Keine Offline-First Database (z.B. PouchDB) - zu komplex für MVP",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "database-design"
+      ]
+    },
+    {
+      "id": "REQ-256",
+      "category": "general",
+      "description": "Keine Echtzeit-Collaboration nötig (nur Max nutzt System)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-257",
+      "category": "general",
+      "description": "Keine Video-Calls oder Screen-Sharing",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-258",
+      "category": "integration",
+      "description": "Bootstrap-Budget (kein Venture Capital)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "api-design",
+        "system-integration"
+      ]
+    },
+    {
+      "id": "REQ-259",
+      "category": "general",
+      "description": "Entwickler = Einzelperson (keine Teams)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-260",
+      "category": "general",
+      "description": "Max ist einziger Beta-Tester",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-261",
+      "category": "general",
+      "description": "Go-Live innerhalb 8-10 Wochen gewünscht",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-262",
+      "category": "compliance",
+      "description": "DSGVO-Konformität nicht verhandelbar",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "gdpr-compliance",
+        "legal-review"
+      ]
+    },
+    {
+      "id": "REQ-263",
+      "category": "data-management",
+      "description": "Deutscher Markt (deutsche Datenschutzerklärung)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "database-design"
+      ]
+    },
+    {
+      "id": "REQ-264",
+      "category": "data-management",
+      "description": "Keine Speicherung außerhalb EU (Supabase: Frankfurt oder Ireland)",
+      "priority": "should-have",
+      "relatedCapabilities": [
+        "database-design"
+      ]
+    },
+    {
+      "id": "REQ-265",
+      "category": "general",
+      "description": "System muss ohne Schulung verständlich sein (Max = nicht technikaffin)",
+      "priority": "must-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-266",
+      "category": "mobile",
+      "description": "Mobile muss ohne Desktop-Ansicht funktionieren",
+      "priority": "must-have",
+      "relatedCapabilities": [
+        "responsive-design",
+        "mobile-optimization"
+      ]
+    },
+    {
+      "id": "REQ-267",
+      "category": "general",
+      "description": "Keine komplexen Dashboards oder Analytics (zumindest MVP)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-268",
+      "category": "general",
+      "description": "**Überfällig:** 1 Kunde (seit 3 Tagen)",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-269",
+      "category": "general",
+      "description": "**Diese Woche:** 3 Kunden",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    },
+    {
+      "id": "REQ-270",
+      "category": "general",
+      "description": "**Nächste Woche:** 2 Kunden",
+      "priority": "should-have",
+      "relatedCapabilities": []
+    }
+  ],
+  "risks": [
+    "Calendar integration complexity (timezones, availability management)",
+    "Email deliverability and spam filter challenges",
+    "Multi-tenancy architecture complexity and data isolation",
+    "UI must be extremely simple for non-technical users",
+    "GDPR compliance requirements for customer data handling",
+    "Feature creep - scope should be limited to MVP",
+    "SaaS requirements: billing system, customer support, monitoring"
+  ]
+}
