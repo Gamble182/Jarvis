@@ -435,6 +435,43 @@ export class AgentLogger {
   }
 
   /**
+   * Log warning message
+   */
+  warn(message: string, data?: any): void {
+    if (!this.shouldLog(LogLevel.WARN)) return;
+
+    const timestamp = this.getTimestamp();
+    const msg = this.config.enableColors ? chalk.yellow(`${timestamp} ⚠️  WARN: ${message}`) : `${timestamp} WARN: ${message}`;
+    console.log(msg);
+
+    if (data) {
+      console.log(JSON.stringify(data, null, 2));
+    }
+
+    this.writeToFile(`WARN: ${message} ${data ? JSON.stringify(data) : ''}`);
+  }
+
+  /**
+   * Log error message
+   */
+  error(message: string, error?: Error | any): void {
+    if (!this.shouldLog(LogLevel.ERROR)) return;
+
+    const timestamp = this.getTimestamp();
+    const errorMsg = error instanceof Error ? error.message : (error ? String(error) : '');
+    const fullMessage = errorMsg ? `${message}: ${errorMsg}` : message;
+
+    const msg = this.config.enableColors ? chalk.red(`${timestamp} ❌ ERROR: ${fullMessage}`) : `${timestamp} ERROR: ${fullMessage}`;
+    console.log(msg);
+
+    if (error instanceof Error && error.stack && this.config.logLevel === LogLevel.DEBUG) {
+      console.log(this.config.enableColors ? chalk.gray(error.stack) : error.stack);
+    }
+
+    this.writeToFile(`ERROR: ${message} ${error instanceof Error ? error.stack : error || ''}`);
+  }
+
+  /**
    * Create a custom separator for organizing output
    */
   section(title: string): void {

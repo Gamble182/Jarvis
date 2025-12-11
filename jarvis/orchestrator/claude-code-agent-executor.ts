@@ -1,4 +1,4 @@
-import { readFileSync, existsSync } from 'fs';
+import { readFileSync, existsSync, readdirSync } from 'fs';
 import { join } from 'path';
 import { ContextManager } from './context-manager.js';
 import { WorkflowPattern, WorkflowStep, ProjectConfig } from '../shared/types.js';
@@ -96,11 +96,29 @@ export class ClaudeCodeAgentExecutor {
    * Load agent prompt from markdown file
    */
   private loadAgentPrompt(agentId: string): string | null {
-    const agentPath = join(this.projectPath, 'agents', `${agentId}.md`);
-    if (!existsSync(agentPath)) {
+    const agentsDir = join(this.projectPath, 'agents');
+
+    // First try exact match
+    const exactPath = join(agentsDir, `${agentId}.md`);
+    if (existsSync(exactPath)) {
+      return readFileSync(exactPath, 'utf-8');
+    }
+
+    // Try to find file that starts with agentId
+    if (!existsSync(agentsDir)) {
       return null;
     }
-    return readFileSync(agentPath, 'utf-8');
+
+    const files = readdirSync(agentsDir);
+    const matchingFile = files.find(file =>
+      file.startsWith(`${agentId}-`) && file.endsWith('.md')
+    );
+
+    if (matchingFile) {
+      return readFileSync(join(agentsDir, matchingFile), 'utf-8');
+    }
+
+    return null;
   }
 
   /**

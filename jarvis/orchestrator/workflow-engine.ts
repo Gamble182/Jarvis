@@ -1,5 +1,7 @@
 import { WorkflowPattern, WorkflowStep, AgentAssignment } from '../shared/types.js';
 import { AgentSpec } from './agent-factory.js';
+import { readFileSync } from 'fs';
+import { join } from 'path';
 
 /**
  * WorkflowEngine - Manages task execution order and dependencies
@@ -11,6 +13,21 @@ import { AgentSpec } from './agent-factory.js';
  * - Tracks project progress across phases
  */
 export class WorkflowEngine {
+  private projectPath: string;
+
+  constructor(projectPath: string) {
+    this.projectPath = projectPath;
+  }
+
+  /**
+   * Load workflow from workflow.json file
+   */
+  public loadWorkflow(): WorkflowPattern {
+    const workflowPath = join(this.projectPath, 'workflow.json');
+    const workflowData = readFileSync(workflowPath, 'utf-8');
+    return JSON.parse(workflowData) as WorkflowPattern;
+  }
+
   /**
    * Create a workflow from agent specifications and project phases
    */

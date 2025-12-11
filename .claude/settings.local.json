@@ -15,7 +15,8 @@
       "Bash(ls:*)",
       "Bash(wc:*)",
       "Bash(du:*)",
-      "Bash(tree:*)"
+      "Bash(tree:*)",
+      "Bash(npm run execute:*)"
     ],
     "deny": [],
     "ask": []

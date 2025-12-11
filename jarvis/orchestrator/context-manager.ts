@@ -124,6 +124,13 @@ export class ContextManager {
   }
 
   /**
+   * Retrieve all artifacts
+   */
+  public getArtifacts(): Artifact[] {
+    return Array.from(this.artifacts.values());
+  }
+
+  /**
    * Retrieve artifacts created by specific agent
    */
   public getArtifactsByAgent(agentId: string): Artifact[] {
