@@ -1,0 +1,109 @@
+{
+  "agents": [
+    {
+      "id": "agent-01",
+      "name": "Business Strategy Agent",
+      "capabilities": [
+        "business-modeling",
+        "mvp-planning",
+        "market-analysis",
+        "go-to-market-strategy",
+        "pricing-strategy"
+      ],
+      "phases": [
+        "conception",
+        "mvp-planning"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "agent-02",
+      "name": "Technical Architecture Agent",
+      "capabilities": [
+        "system-architecture",
+        "technical-design",
+        "database-design",
+        "api-design",
+        "security-architecture",
+        "offline-first-architecture"
+      ],
+      "phases": [
+        "technical-design"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "agent-03",
+      "name": "UX Design Agent",
+      "capabilities": [
+        "ux-design",
+        "mobile-optimization",
+        "responsive-design"
+      ],
+      "phases": [
+        "technical-design"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "agent-04",
+      "name": "Compliance & Legal Agent",
+      "capabilities": [
+        "gdpr-compliance",
+        "legal-review"
+      ],
+      "phases": [
+        "conception",
+        "mvp-planning",
+        "technical-design",
+        "development",
+        "launch-preparation"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "agent-05",
+      "name": "Backend Development Agent",
+      "capabilities": [
+        "backend-development",
+        "database-design",
+        "api-design",
+        "business-logic-design",
+        "email-automation",
+        "workflow-automation"
+      ],
+      "phases": [
+        "development"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "agent-06",
+      "name": "Frontend Development Agent",
+      "capabilities": [
+        "frontend-development",
+        "pwa-development",
+        "mobile-optimization",
+        "responsive-design"
+      ],
+      "phases": [
+        "development"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "agent-07",
+      "name": "Integration & Automation Agent",
+      "capabilities": [
+        "system-integration",
+        "workflow-automation",
+        "email-automation",
+        "notification-systems"
+      ],
+      "phases": [
+        "development"
+      ],
+      "priority": 5
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "projectName": "WartungsWerk",
+  "alternativeName": "Drehmoment",
+  "tagline": "Der Hebel für dein Handwerk",
+  "projectType": "saas-application",
+  "targetMarket": "germany",
+  "domains": [
+    "software-development",
+    "business-conception",
+    "legal-compliance",
+    "marketing",
+    "financial-planning"
+  ],
+  "requiredCapabilities": [
+    "email-automation",
+    "notification-systems",
+    "calendar-integration",
+    "business-logic-design",
+    "database-design",
+    "responsive-design",
+    "mobile-optimization",
+    "pwa-development",
+    "ux-design",
+    "frontend-development",
+    "workflow-automation",
+    "backend-development",
+    "gdpr-compliance",
+    "legal-review",
+    "data-modeling",
+    "api-design",
+    "system-integration",
+    "security-architecture",
+    "system-architecture",
+    "technical-design",
+    "business-modeling",
+    "mvp-planning",
+    "market-analysis",
+    "go-to-market-strategy",
+    "pricing-strategy",
+    "cost-estimation",
+    "offline-first-architecture",
+    "file-storage-management"
+  ],
+  "phases": [
+    "conception",
+    "mvp-planning",
+    "technical-design",
+    "development",
+    "beta-testing",
+    "market-validation",
+    "launch-preparation"
+  ],
+  "constraints": {
+    "technicalComplexity": "high",
+    "budget": "bootstrap",
+    "timeline": "8-10 weeks MVP",
+    "hostingCost": "€0/month MVP",
+    "mvpUser": "single-user",
+    "sasPhase": "multi-tenant"
+  },
+  "targetUser": {
+    "name": "Max",
+    "role": "Selbstständiger Heizungsbauer",
+    "businessType": "Ein-Mann-Betrieb",
+    "customers": "~80 Wartungskunden",
+    "techAffinity": "mittel",
+    "painPoints": [
+      "Manuelle Excel-basierte Kundenverwaltung",
+      "Zeitaufwändige telefonische Kundenorganisation",
+      "Vergessene Wartungstermine",
+      "Keine systematische Materialplanung"
+    ],
+    "opportunityCost": "€20.000/Jahr"
+  },
+  "techStack": {
+    "frontend": {
+      "framework": "Next.js 14 (App Router)",
+      "language": "TypeScript",
+      "styling": "Tailwind CSS + shadcn/ui",
+      "state": "React Context + Zustand",
+      "forms": "React Hook Form + Zod",
+      "pwa": "next-pwa Plugin",
+      "icons": "Lucide React"
+    },
+    "backend": {
+      "api": "Next.js API Routes",
+      "orm": "Prisma",
+      "database": "PostgreSQL (Supabase)",
+      "auth": "NextAuth.js",
+      "jobs": "Vercel Cron",
+      "email": "Resend",
+      "emailTemplates": "React Email"
+    },
+    "storage": {
+      "service": "Supabase Storage",
+      "fallback": "Vercel Blob"
+    },
+    "hosting": {
+      "frontend": "Vercel",
+      "database": "Supabase",
+      "monitoring": "Sentry",
+      "analytics": "Vercel Analytics"
+    }
+  }
+}

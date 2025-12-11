@@ -1,0 +1,233 @@
+{
+  "type": "sequential",
+  "steps": [
+    {
+      "id": "step-agent-01-conception",
+      "agentId": "agent-01",
+      "action": "Execute Business Strategy Agent for conception phase",
+      "phase": "conception",
+      "inputs": [],
+      "outputs": [
+        "business-model-canvas",
+        "value-proposition",
+        "market-analysis",
+        "competitive-positioning"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "step-agent-04-conception",
+      "agentId": "agent-04",
+      "action": "Execute Compliance & Legal Agent for initial GDPR assessment",
+      "phase": "conception",
+      "inputs": [
+        "step-agent-01-conception"
+      ],
+      "outputs": [
+        "gdpr-requirements",
+        "legal-constraints"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "step-agent-01-mvp",
+      "agentId": "agent-01",
+      "action": "Execute Business Strategy Agent for MVP planning",
+      "phase": "mvp-planning",
+      "inputs": [
+        "step-agent-04-conception"
+      ],
+      "outputs": [
+        "mvp-scope",
+        "feature-prioritization",
+        "success-metrics",
+        "timeline-estimation"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "step-agent-04-mvp",
+      "agentId": "agent-04",
+      "action": "Execute Compliance & Legal Agent for MVP compliance review",
+      "phase": "mvp-planning",
+      "inputs": [
+        "step-agent-01-mvp"
+      ],
+      "outputs": [
+        "compliance-checklist",
+        "opt-in-requirements"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "step-agent-02-architecture",
+      "agentId": "agent-02",
+      "action": "Execute Technical Architecture Agent for system design",
+      "phase": "technical-design",
+      "inputs": [
+        "step-agent-01-mvp",
+        "step-agent-04-mvp"
+      ],
+      "outputs": [
+        "system-architecture",
+        "database-schema",
+        "api-design",
+        "offline-sync-strategy",
+        "security-architecture"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "step-agent-03-ux",
+      "agentId": "agent-03",
+      "action": "Execute UX Design Agent for mobile-first design",
+      "phase": "technical-design",
+      "inputs": [
+        "step-agent-02-architecture"
+      ],
+      "outputs": [
+        "mobile-wireframes",
+        "user-journey-map",
+        "design-system",
+        "accessibility-requirements"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "step-agent-04-technical-design",
+      "agentId": "agent-04",
+      "action": "Execute Compliance & Legal Agent for technical compliance review",
+      "phase": "technical-design",
+      "inputs": [
+        "step-agent-02-architecture",
+        "step-agent-03-ux"
+      ],
+      "outputs": [
+        "data-protection-measures",
+        "consent-management-design"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "step-agent-05-backend",
+      "agentId": "agent-05",
+      "action": "Execute Backend Development Agent for core backend implementation",
+      "phase": "development",
+      "inputs": [
+        "step-agent-02-architecture",
+        "step-agent-04-technical-design"
+      ],
+      "outputs": [
+        "database-implementation",
+        "api-endpoints",
+        "auth-system",
+        "business-logic"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "step-agent-06-frontend",
+      "agentId": "agent-06",
+      "action": "Execute Frontend Development Agent for PWA implementation",
+      "phase": "development",
+      "inputs": [
+        "step-agent-03-ux",
+        "step-agent-05-backend"
+      ],
+      "outputs": [
+        "pwa-implementation",
+        "mobile-ui",
+        "offline-functionality"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "step-agent-07-automation",
+      "agentId": "agent-07",
+      "action": "Execute Integration & Automation Agent for email automation and workflow",
+      "phase": "development",
+      "inputs": [
+        "step-agent-05-backend"
+      ],
+      "outputs": [
+        "email-automation",
+        "cronjobs",
+        "notification-system"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "step-agent-04-development",
+      "agentId": "agent-04",
+      "action": "Execute Compliance & Legal Agent for implementation compliance check",
+      "phase": "development",
+      "inputs": [
+        "step-agent-05-backend",
+        "step-agent-06-frontend",
+        "step-agent-07-automation"
+      ],
+      "outputs": [
+        "compliance-verification",
+        "gdpr-implementation-check"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "step-agent-04-launch",
+      "agentId": "agent-04",
+      "action": "Execute Compliance & Legal Agent for launch preparation",
+      "phase": "launch-preparation",
+      "inputs": [
+        "step-agent-04-development"
+      ],
+      "outputs": [
+        "privacy-policy",
+        "terms-of-service",
+        "av-vertrag-template",
+        "gdpr-documentation"
+      ],
+      "status": "pending"
+    }
+  ],
+  "dependencies": {
+    "step-agent-04-conception": [
+      "step-agent-01-conception"
+    ],
+    "step-agent-01-mvp": [
+      "step-agent-04-conception"
+    ],
+    "step-agent-04-mvp": [
+      "step-agent-01-mvp"
+    ],
+    "step-agent-02-architecture": [
+      "step-agent-01-mvp",
+      "step-agent-04-mvp"
+    ],
+    "step-agent-03-ux": [
+      "step-agent-02-architecture"
+    ],
+    "step-agent-04-technical-design": [
+      "step-agent-02-architecture",
+      "step-agent-03-ux"
+    ],
+    "step-agent-05-backend": [
+      "step-agent-02-architecture",
+      "step-agent-04-technical-design"
+    ],
+    "step-agent-06-frontend": [
+      "step-agent-03-ux",
+      "step-agent-05-backend"
+    ],
+    "step-agent-07-automation": [
+      "step-agent-05-backend"
+    ],
+    "step-agent-04-development": [
+      "step-agent-05-backend",
+      "step-agent-06-frontend",
+      "step-agent-07-automation"
+    ],
+    "step-agent-04-launch": [
+      "step-agent-04-development"
+    ]
+  }
+}

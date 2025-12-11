@@ -1,0 +1,377 @@
+{
+  "projectType": "saas-application",
+  "domains": [
+    "software-development",
+    "business-conception",
+    "legal-compliance",
+    "marketing",
+    "financial-planning"
+  ],
+  "complexity": "high",
+  "requiredCapabilities": [
+    "email-automation",
+    "notification-systems",
+    "calendar-integration",
+    "business-logic-design",
+    "database-design",
+    "responsive-design",
+    "mobile-optimization",
+    "pwa-development",
+    "ux-design",
+    "frontend-development",
+    "workflow-automation",
+    "backend-development",
+    "gdpr-compliance",
+    "legal-review",
+    "data-modeling",
+    "api-design",
+    "system-integration",
+    "security-architecture",
+    "system-architecture",
+    "technical-design",
+    "business-modeling",
+    "mvp-planning",
+    "market-analysis",
+    "go-to-market-strategy",
+    "pricing-strategy",
+    "cost-estimation",
+    "offline-first-architecture",
+    "file-storage-management"
+  ],
+  "suggestedPhases": [
+    "conception",
+    "mvp-planning",
+    "technical-design",
+    "development",
+    "beta-testing",
+    "market-validation",
+    "launch-preparation"
+  ],
+  "extractedRequirements": [
+    {
+      "id": "FR-001",
+      "category": "customer-management",
+      "description": "Kunde anlegen mit Name, Adresse, Telefon, Email (optional), Notizen",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["database-design", "frontend-development", "data-modeling"]
+    },
+    {
+      "id": "FR-002",
+      "category": "customer-management",
+      "description": "Heizung zuordnen mit Modell, Installationsdatum, Seriennummer, Wartungsintervall (1:n Beziehung)",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["database-design", "business-logic-design", "data-modeling"]
+    },
+    {
+      "id": "FR-003",
+      "category": "customer-management",
+      "description": "Kundenliste anzeigen mit Sortierung, Suche, Filter 'Wartung fällig'",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["frontend-development", "ux-design", "mobile-optimization"]
+    },
+    {
+      "id": "FR-004",
+      "category": "maintenance-management",
+      "description": "Wartungstermin automatisch berechnen basierend auf Intervall (Nächste Wartung = Letzte Wartung + Intervall)",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["business-logic-design", "backend-development"]
+    },
+    {
+      "id": "FR-005",
+      "category": "maintenance-management",
+      "description": "Wartung als erledigt markieren mit Datum, Notizen, Foto-Upload (mobile-optimiert, offline-fähig)",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["mobile-optimization", "offline-first-architecture", "file-storage-management", "pwa-development"]
+    },
+    {
+      "id": "FR-006",
+      "category": "maintenance-management",
+      "description": "Wartungshistorie anzeigen chronologisch mit Datum, Notizen, Fotos",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["frontend-development", "ux-design", "file-storage-management"]
+    },
+    {
+      "id": "FR-007",
+      "category": "automation",
+      "description": "Email-Erinnerung an Kunde 4 Wochen vor Wartung mit Personalisierung, Abmelde-Link",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["email-automation", "workflow-automation", "gdpr-compliance"]
+    },
+    {
+      "id": "FR-008",
+      "category": "automation",
+      "description": "Email-Erinnerung an Kunde 1 Woche vor Wartung",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["email-automation", "workflow-automation"]
+    },
+    {
+      "id": "FR-009",
+      "category": "automation",
+      "description": "Wöchentliche Übersicht für Max jeden Montag 7:00 Uhr mit überfälligen, anstehenden Wartungen und benötigten Teilen",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["email-automation", "workflow-automation", "business-logic-design"]
+    },
+    {
+      "id": "FR-010",
+      "category": "automation",
+      "description": "Erinnerung für Kunden ohne Email im Dashboard mit Click-to-Call Links",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["frontend-development", "ux-design", "mobile-optimization"]
+    },
+    {
+      "id": "FR-011",
+      "category": "mobile",
+      "description": "Progressive Web App (PWA) installierbar auf Android/iOS mit Offline-Fähigkeit",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["pwa-development", "offline-first-architecture", "mobile-optimization"]
+    },
+    {
+      "id": "FR-012",
+      "category": "mobile",
+      "description": "Mobile-First UI mit großen Touch-Targets (min. 44x44px), minimales Scrolling",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["ux-design", "mobile-optimization", "frontend-development"]
+    },
+    {
+      "id": "FR-013",
+      "category": "material-management",
+      "description": "Teileliste pro Heizungsmodell hinterlegen und bei Wartung anzeigen",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["business-logic-design", "database-design", "frontend-development"]
+    },
+    {
+      "id": "NFR-001",
+      "category": "performance",
+      "description": "Initial Page Load <3 Sekunden (3G Mobile), Kundenliste <2 Sekunden, Wartung abhaken <1 Sekunde",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["frontend-development", "system-architecture", "mobile-optimization"]
+    },
+    {
+      "id": "NFR-002",
+      "category": "performance",
+      "description": "Offline-Fähigkeit: Kundenliste offline verfügbar, Wartungen offline abhakbar, automatischer Sync",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["offline-first-architecture", "pwa-development", "system-architecture"]
+    },
+    {
+      "id": "NFR-010",
+      "category": "security",
+      "description": "Login mit Email + Passwort, Session-basiert (JWT), Passwort-Reset",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["security-architecture", "backend-development"]
+    },
+    {
+      "id": "NFR-011",
+      "category": "security",
+      "description": "HTTPS obligatorisch, Datenbank verschlüsselt, Passwörter gehasht (bcrypt)",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["security-architecture", "system-architecture"]
+    },
+    {
+      "id": "NFR-012",
+      "category": "security",
+      "description": "Tägliche automatische Backups, 30 Tage Retention, Point-in-time Recovery",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["system-architecture", "backend-development"]
+    },
+    {
+      "id": "NFR-020",
+      "category": "gdpr",
+      "description": "Double-Opt-In für Email, Datenschutzerklärung, Abmelde-Link in jeder Email",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["gdpr-compliance", "legal-review", "email-automation"]
+    },
+    {
+      "id": "NFR-021",
+      "category": "gdpr",
+      "description": "Betroffenenrechte: Auskunft (CSV-Export), Löschung, Datenportabilität",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["gdpr-compliance", "legal-review", "backend-development"]
+    },
+    {
+      "id": "NFR-030",
+      "category": "usability",
+      "description": "Max sollte System in <30 Minuten verstehen, keine Dokumentation nötig, Tooltips",
+      "priority": "must-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["ux-design", "frontend-development"]
+    },
+    {
+      "id": "NFR-031",
+      "category": "usability",
+      "description": "WCAG 2.1 Level AA, Kontrast 4.5:1, Touch-Targets min. 44x44px",
+      "priority": "should-have",
+      "phase": "mvp",
+      "relatedCapabilities": ["ux-design", "frontend-development"]
+    },
+    {
+      "id": "FR-020",
+      "category": "scheduling",
+      "description": "Termin-Status-Verwaltung (Ausstehend → Bestätigt → Durchgeführt), Kalenderansicht",
+      "priority": "should-have",
+      "phase": "phase-2",
+      "relatedCapabilities": ["calendar-integration", "frontend-development", "business-logic-design"]
+    },
+    {
+      "id": "FR-021",
+      "category": "scheduling",
+      "description": "Terminvorschläge generieren basierend auf Verfügbarkeit und geografischer Nähe",
+      "priority": "should-have",
+      "phase": "phase-2",
+      "relatedCapabilities": ["business-logic-design", "system-integration"]
+    },
+    {
+      "id": "FR-022",
+      "category": "scheduling",
+      "description": "Google Calendar Integration mit bidirektionaler Synchronisation",
+      "priority": "should-have",
+      "phase": "phase-2",
+      "relatedCapabilities": ["calendar-integration", "system-integration", "api-design"]
+    },
+    {
+      "id": "FR-030",
+      "category": "maintenance-advanced",
+      "description": "Checklisten pro Wartung mit Abhaken während Wartung",
+      "priority": "should-have",
+      "phase": "phase-2",
+      "relatedCapabilities": ["frontend-development", "business-logic-design", "mobile-optimization"]
+    },
+    {
+      "id": "FR-031",
+      "category": "maintenance-advanced",
+      "description": "Unterschrift des Kunden mit Signature Pad, PDF-Generation",
+      "priority": "should-have",
+      "phase": "phase-2",
+      "relatedCapabilities": ["frontend-development", "backend-development"]
+    },
+    {
+      "id": "FR-040",
+      "category": "inventory",
+      "description": "Lagerbestand tracken mit Mindestbestand und Warnungen",
+      "priority": "should-have",
+      "phase": "phase-2",
+      "relatedCapabilities": ["business-logic-design", "database-design", "workflow-automation"]
+    },
+    {
+      "id": "FR-050",
+      "category": "invoicing",
+      "description": "Rechnungserstellung nach Wartung mit PDF-Generation und Email-Versand",
+      "priority": "nice-to-have",
+      "phase": "phase-2",
+      "relatedCapabilities": ["backend-development", "email-automation"]
+    },
+    {
+      "id": "FR-060",
+      "category": "saas",
+      "description": "Multi-Mandanten-Fähigkeit mit vollständiger Datentrennung",
+      "priority": "must-have",
+      "phase": "phase-3",
+      "relatedCapabilities": ["system-architecture", "database-design", "security-architecture"]
+    },
+    {
+      "id": "FR-061",
+      "category": "saas",
+      "description": "Rollen & Berechtigungen (Admin, Mitarbeiter, Bürokraft)",
+      "priority": "must-have",
+      "phase": "phase-3",
+      "relatedCapabilities": ["security-architecture", "backend-development", "system-architecture"]
+    },
+    {
+      "id": "FR-070",
+      "category": "analytics",
+      "description": "Statistiken & Reporting (Wartungen pro Monat, Umsatz pro Kunde, Auslastung)",
+      "priority": "nice-to-have",
+      "phase": "phase-3",
+      "relatedCapabilities": ["frontend-development", "backend-development", "business-logic-design"]
+    }
+  ],
+  "businessModel": {
+    "mvp": {
+      "payment": "€3.000 einmalig",
+      "equity": "30% für Max, 70% für Developer"
+    },
+    "saas": {
+      "pricingTiers": [
+        {
+          "name": "Solo",
+          "price": "€29/Monat",
+          "customers": "bis 50",
+          "features": "Basis-Features"
+        },
+        {
+          "name": "Professional",
+          "price": "€49/Monat",
+          "customers": "bis 150",
+          "features": "Basis + Rechnungen + Kalender"
+        },
+        {
+          "name": "Enterprise",
+          "price": "€99/Monat",
+          "customers": "unbegrenzt",
+          "features": "Professional + Multi-User + API"
+        }
+      ]
+    }
+  },
+  "marketPotential": {
+    "targetMarket": "Ein-Mann-Heizungsbaubetriebe Deutschland",
+    "marketSize": "~15.000 Betriebe",
+    "year1Target": "50-100 Kunden",
+    "mrr": "€3.000+ nach 12 Monaten"
+  },
+  "risks": [
+    {
+      "id": "RISK-001",
+      "category": "technical",
+      "description": "Email-Zustellung - Emails landen im Spam",
+      "impact": "high",
+      "mitigation": "Resend nutzen, SPF/DKIM/DMARC konfigurieren, Opt-In dokumentieren"
+    },
+    {
+      "id": "RISK-002",
+      "category": "technical",
+      "description": "Offline-Sync-Konflikte",
+      "impact": "medium",
+      "mitigation": "Last-Write-Wins Strategie, Konflikt-Flag bei Sync"
+    },
+    {
+      "id": "RISK-010",
+      "category": "business",
+      "description": "Max nutzt System nicht aktiv",
+      "impact": "very-high",
+      "mitigation": "Intensive 2h Schulung, wöchentliche Check-Ins, kontinuierlicher Feedback-Loop"
+    },
+    {
+      "id": "RISK-020",
+      "category": "legal",
+      "description": "DSGVO-Verstoß",
+      "impact": "very-high",
+      "mitigation": "Rechtsanwalt konsultieren, Double-Opt-In, AV-Vertrag mit Supabase"
+    }
+  ],
+  "timeline": {
+    "mvp": "8-10 weeks",
+    "beta": "+4 weeks",
+    "saas": "+8 weeks"
+  }
+}
